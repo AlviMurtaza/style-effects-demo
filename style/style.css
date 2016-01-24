@@ -28,7 +28,6 @@ header div,
 .container {
 	width: 80%;
 	margin: auto;
-	background-color: #2F8386;
 }
 
 .profile__teaser {
@@ -54,7 +53,6 @@ header div,
 	height: 200px;
 	padding: 40px;
 	box-shadow: inset -10px -30px rgba(0,0,0,.06);
-	border-radius: 50%;
 	-webkit-animation: bobble 5s ease-in-out infinite;
 	animation: bobble 5s ease-in-out infinite;
 	-webkit-transform-origin: center bottom;
@@ -141,4 +139,47 @@ header div,
 
 .search__wrapper input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+footer {
+	background: #599597;
+}
+
+.rel__container {
+	width: 80%;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.rel__master li {
+	display: inline-block;
+	padding: 20px;
+	width: 16%;
+	text-align: center;
+}
+
+.rel__master li a {
+	text-decoration: none;
+	color: #fff;
+	transition: color .5s;
+	font-size: 52px;
+}
+
+i.fa {
+	display: block;
+	background: rgba(255, 255, 255, 0.0980392);
+	height: 120px;
+	width: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	text-align: center;
+	transition: background .5s;
+}
+
+.rel__master li a:hover {
+    color: #599597;
+}
+
+.rel__master li a:hover i {
+    background: #fff;
 }
