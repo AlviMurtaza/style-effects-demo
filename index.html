@@ -4,22 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style/style.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-	<script>
-		// Wait for window load
-		$(window).load(function() {
-			// Animate loader off screen
-			$("#loader").animate({
-				top: -200
-			}, 1500);
-		});
-	</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
 	<script src="js/script.js"></script>
 </head>
 <body>
-<img src="images/preloader.gif" id="loader">
-<img src="http://farm6.static.flickr.com/5299/5400751421_55d49b2786_o.jpg">
+	<div class="loader"></div>
 	<div class="container">
 		<div class="profile__teaser">
 			<div class="profile__left-section">
