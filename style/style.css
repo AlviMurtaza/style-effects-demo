@@ -6,7 +6,9 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	    background-color: #EDEDED;
 }
+
 .loader {
 	position: fixed;
 	left: 0px;
@@ -20,14 +22,28 @@ body {
 header {
 	padding: 40px;
 }
+
 header div,
 .navigation .menu li {
     display: inline-block;
 }
 
-.container {
+.header__master {
 	width: 80%;
 	margin: auto;
+	border-bottom: 1px solid #acacac;
+	padding: 40px;
+	display: block;
+	position: relative;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .profile__teaser {
@@ -37,11 +53,16 @@ header div,
 .profile__left-section {
 	width: 30%;
 	vertical-align: middle;
+	float: left;
 }
 
 .profile__right-section {
-	width: 69%;
+	  margin-top: 40px;
+    width: 52%;
+    float: right;
+    text-align: right;
 }
+
 .profile__left-section,
 .profile__right-section {
 	display: inline-block;
@@ -80,24 +101,15 @@ header div,
 	transform: translateY(-6px);
 }
 
-// .search__wrapper {
-//   margin: 50px 100px;
-//   display: inline-block;
-//   position: relative;
-//   height: 60px;
-//   float: right;
-//   padding: 0;
-// }
-
 .search__wrapper input[type="text"] {
   height: 60px;
-  font-size: 55px;
+  font-size: 45px;
   display: inline-block;
   font-weight: 100;
   border: none;
   outline: none;
   color: #555;
-  padding: 3px;
+  margin-top: 40px;
   padding-right: 60px;
   width: 0px;
   position: absolute;
@@ -114,12 +126,14 @@ header div,
 }
 
 .search__wrapper input[type="text"]:focus {
-  width: 700px;
+  width: 450px;
   z-index: 1;
   border-bottom: 1px solid #BBB;
   cursor: text;
 }
+
 .search__wrapper input[type="submit"] {
+	margin-top: 40px;
   height: 67px;
   width: 63px;
   display: inline-block;
@@ -143,6 +157,7 @@ header div,
 
 footer {
 	background: #599597;
+	clear: both;
 }
 
 .rel__container {
