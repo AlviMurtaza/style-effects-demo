@@ -193,12 +193,12 @@ footer {
 	width: 80%;
 	margin: auto;
 	padding: 50px 0;
+	text-align: center;
 }
 
 .rel__master li {
 	display: inline-block;
 	padding: 20px;
-	width: 16%;
 	text-align: center;
 }
 
