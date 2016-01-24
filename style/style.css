@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+html, body {
+    /* For the loading indicator to be vertically centered ensure */
+    /* the html and body elements take up the full viewport */
+    min-height: 100%;
+}
+html.loading {
+    /* Replace #333 with the background-color of your choice */
+    /* Replace loading.gif with the loading image of your choice */
+    background: #333 url('loading.gif') no-repeat 50% 50%;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body {
+    /* Make the contents of the body opaque during loading */
+    opacity: 0;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	background-color: #2F8386;
+	margin-top: 100px;
+}
+.profile__left-section {
+	width: 30%;
+	vertical-align: middle;
+}
+
+.profile__right-section {
+	width: 69%;
+}
+.profile__left-section,
+.profile__right-section {
+	display: inline-block;
+}
+
+.profile__left-section img{
+	max-width: 100%;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	padding: 40px;
+	box-shadow: inset -10px -30px rgba(0,0,0,.06);
+	border-radius: 50%;
+	-webkit-animation: bobble 5s ease-in-out infinite;
+	animation: bobble 5s ease-in-out infinite;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+	-webkit-transition: padding .3s, bottom .3s;
+	transition: padding .3s, bottom .3s;
+	text-align: center;
+	background: cadetblue;
+}
+
+@-webkit-keyframes bobble {
+	33% {
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+
+	66% {
+		-webkit-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+}
+
+.profile__image:hover {
+	-webkit-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
