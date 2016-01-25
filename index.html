@@ -2,32 +2,56 @@
 <html class="no-js">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Bill gates | People.com</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(window).load(function() {
-			$(".loader").fadeOut("slow");
-		})
-	</script>
+	<script src="js/snap.svg-min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/classie.js"></script>
+		<script src="js/svgLoader.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script>
+			
+			$(window).load(function() {
+			 loader();
+		});
+			function loader() {
+				loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );
+
+				function init() {				
+							loader.show();
+							setTimeout( function() {
+								loader.hide();
+								$('.mycontainer').addClass( 'show' );
+							}, 2000 );	
+				}
+				init();
+			};
+		</script>
 </head>
 <body>
-	<div class="loader"></div>
+	<div id="pagewrap" class="pagewrap">
+		<div id="loader" class="pageload-overlay" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none" >
+					<path d="m -5,-5 0,70 90,0 0,-70 z m 5,5 c 0,0 7.9843788,0 40,0 35,0 40,0 40,0 l 0,60 c 0,0 -3.944487,0 -40,0 -30,0 -40,0 -40,0 z"/>
+				</svg>
+			</div><!-- /pageload-overlay -->
+	<div class="mycontainer">	
+		
 	<header>
 		<div class="header__master">
 			<div class="logo">
-				<h1>[MY-TEMP-REPO]</h1>
+				<h1>People.com</h1>
 			</div>
 
-			<div class="navigation">
-				<ul class="menu">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT US</a></li>
-				</ul>
-			</div>
+			<nav class="cl-effect-21">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact Us</a>
+				</nav>
 
 			<div class="search__wrapper">
 				<form action="" autocomplete="on">
@@ -39,43 +63,74 @@
 	</header>
 
 	<div class="container">
+		<section class="grid3d vertical" id="grid3d">
+				<div class="grid-wrap">
+					<div class="grid">
+						<figure>
 		<div class="profile__teaser">
 			<div class="profile__left-section">
-				<div class="profile__image">
-					<img src="images/profile.jpg" alt="">
+				<div class="profile__image animated bounceIn">
+					<img class="bottom " src="images/bill_gates_prof.png" alt="">
+					<img class="top" src="images/bill_gates_profbw.png" alt="">
+					
 				</div>
 			</div>
 
 			<div class="profile__right-section">
 				<div class="profile__name">
-					<h1>MURTAZA ALVI</h1>
+					<h1>Bill Gates</h1>
 				</div>
 
 				<div class="profile__short-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ut provident tenetur possimus eius, distinctio atque! Corporis accusamus aliquid repudiandae facere necessitatibus quam neque placeat saepe officiis, eos consectetur minima.</p>
+					<h4>October 28, 1955 (age 60)</h4><h4>American</h4>
+					<br/>
+					<p>William Henry "Bill" Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, and computer programmer. In 1975, Gates and Paul Allen co-founded Microsoft, which became the world's largest PC software company. </p>
 				</div>
 			</div>
 		</div>
-	</div>
+		</figure>
+		</div>
+				</div><!-- /grid-wrap -->
+				<div class="content">
+					<div>
+						<div class="dummy-img"></div>
+						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+					</div>
 
+					<span class="loading"></span>
+					<span class="fa fa-times fa-3x close-content"></span>
+				</div>
+			</section>
+	</div>
 	<footer>
 		<div class="rel">
 			<div class="rel__container">
-				<ul class="rel__master">
-					<li><a href="#"><i class="fa fa-mobile"></i></a></li>
-					<li><a href="#"><i class="fa fa-heart"></i></a></li>
-					<li><a href="#"><i class="fa fa-child"></i></a></li>
-					<li><a href="#"><i class="fa fa-industry"></i></a></li>
-					<li><a href="#"><i class="fa fa-pencil"></i></a></li>
-					<li><a href="#"><i class="fa fa-laptop"></i></a></li>
-					<li><a href="#"><i class="fa fa-user-secret"></i></a></li>
-					<li><a href="#"><i class="fa fa-bicycle"></i></a></li>
-					<li><a href="#"><i class="fa fa-phone"></i></a></li>
-					<li><a href="#"><i class="fa fa-paper-plane"></i></a></li>
+				<ul class=" hi-icon-effect-3 hi-icon-effect-3a">					
+					<i class="hi-icon fa fa-mobile"></i>
+					<i class="hi-icon fa fa-heart"></i>
+					<i class="hi-icon fa fa-child"></i>
+					<i class="hi-icon fa fa-industry"></i>
+					<i class="hi-icon fa fa-pencil"></i>
+					<i class="hi-icon fa fa-laptop"></i>
+					<i class="hi-icon fa fa-user-secret"></i>
+					<i class="hi-icon fa fa-bicycle"></i>
+					<i class="hi-icon fa fa-bank"></i>
+					<i class="hi-icon fa fa-credit-card"></i>
+					
 				</ul>
 			</div>
 		</div>
 	</footer>
+	</div>
+	
+			</div>
+	
+	<script src="js/helper.js"></script>
+		<script src="js/grid3d.js"></script>
+		<script>
+			new grid3D( document.getElementById( 'grid3d' ) );
+		</script>
 </body>
 
 </html>
